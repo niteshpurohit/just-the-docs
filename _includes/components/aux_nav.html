@@ -2,7 +2,7 @@
   <ul class="aux-nav-list">
     {% for link in site.aux_links %}
       <li class="aux-nav-list-item">
-        <a href="{{ link[:link] }}" class="site-button"
+        <a href="{{ link[:url] }}" class="site-button"
           {% if link[:new_tab] %}
           target="_blank" rel="noopener noreferrer"
           {% endif %}
