@@ -2,12 +2,12 @@
   <ul class="aux-nav-list">
     {% for link in site.aux_links %}
       <li class="aux-nav-list-item">
-        <a href="{{ link.last }}" class="site-button"
-          {% if site.aux_links_new_tab %}
+        <a href="{{ link[:link] }}" class="site-button"
+          {% if link[:new_tab] %}
           target="_blank" rel="noopener noreferrer"
           {% endif %}
         >
-          {{ link.first }}
+          {{ link[:title] }}
         </a>
       </li>
     {% endfor %}
